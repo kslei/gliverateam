@@ -1,0 +1,64 @@
+@import '../_base.scss';
+
+.user {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 172px 131px 156px 207px 140px 80px;
+  align-items: center;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  padding: 20px 0 19px 0;
+  border-bottom: 1px solid #EEEEEE ;
+  @media (max-width: 1219.98px) {
+    grid-template-columns: 3fr 2fr 2fr 3fr 2fr 1fr;
+    font-size: 13px;
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-gap: 5px;
+    padding: 5px 0 4px 0;
+  }
+  @media (max-width: 519px) {
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 2px;
+  }
+  &__title {
+    display: none;
+    @media (max-width: 767.98px) {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      color: $gray2;
+    }
+  }
+}
+.button, .button__active {
+  font-family: "Poppins";
+  width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  width: Fixed (80px)px;
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.button {
+    background-color: #FFC5C5;
+    border: 1px solid #DF0404;
+    color: #DF0404;
+  &__active {
+    background-color: #16c09861;
+    border: 1px solid #00B087;
+    color: #008767;
+  }
+}
